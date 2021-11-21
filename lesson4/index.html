@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    //function decalaration
+    // function greeting(arg1, arg2) {
+    //     console.log(arg1 + ' ' + arg2);
+    //     console.log(arguments[2]);
+    // }
+    //
+    // greeting('hello', 'okten'); // helll okten
+    // greeting('hi', 'serj'); // hi serj
+    // greeting('lol', 'foobar'); // lol foobar
+    //
+    // greeting('asd', 'qwe', 'adsadsa', 1231321);
+    // greeting(undefined, undefined);
+    // greeting('arg1 fill');
+
+
+    // function randomizer(limit) {
+    //     let result = Math.round(Math.random() * limit);
+    //     return result;
+    // }
+
+    // let x1 = randomizer(100);
+    // let x2 = randomizer(200);
+    // let x3 = randomizer(300);
+    // console.log(x1, x2, x3);
+
+    // for (let i = 0; i < 100; i++) {
+    //     document.write(`<div>${randomizer(100)}</div>`);
+    // }
+
+
+    // function randomWrite(size, diapazon) {
+    //     for (let i = 0; i < size; i++) {
+    //         let r = Math.round(Math.random() * diapazon);
+    //         document.write(`<div>${r}</div>`);
+    //     }
+    // }
+    //
+    // randomWrite(10, 10000);
+    // document.write(`<hr>`);
+    // randomWrite(27, 17);
+
+
+    // let outer = 0;
+    //
+    // function fooabr() {
+    //     outer = 100;
+    // }
+    //
+    // fooabr();
+    // console.log(outer);
+
+    // function doseIsNumber(a, b) {
+    //     return typeof a === 'number' && typeof b === "number"
+    // }
+    //
+    // function add(a, b) {
+    //     if (doseIsNumber(a, b)) {
+    //         return a + b;
+    //     }
+    // }
+    //
+    // function minus(a, b) {
+    //     if (doseIsNumber(a, b)) {
+    //         return a - b;
+    //     }
+    // }
+    //
+    // function calculator(a, b, action) {
+    //     if (action === '+') {
+    //         return add(a, b);
+    //     } else if (action === '-') {
+    //         return minus(a, b);
+    //     }
+    // }
+    //
+    // calculator(10, 20, "+");
+
+
+    // function cacl() {
+    //     let sum = 0;
+    //     for (const num of arguments) {
+    //         sum += num;
+    //     }
+    //     console.log(sum);
+    //
+    // }
+    //
+    // cacl(10, 20, 30, 40, 50);
+    // cacl(10, 20, 30, 40, 50, 60, 10);
+    // cacl(10, 20);
+
+
+    // function calclualte() {
+    //     if (arguments.length === 2) {
+    //         return arguments[0] + arguments[1];
+    //     } else if (arguments.length === 3) {
+    //         return arguments[0] - arguments[1] - arguments[2];
+    //     }
+    // }
+    //
+    // calclualte(10, 20); // 30
+    // calclualte(10, 20, 30); // -40
+
+    // (function (msg) {
+    //     console.log(msg + '!!!!');
+    // }('adasd'));
+    //
+    // for (let i = array.length - 1; i >= 0; i--) {
+    //     const arrayElement = array[i];
+    //
+    // }
+
+
+    // let i = arr.length - 1;
+    // while (i >= 0) {
+    //     //....some action
+    //     i--;
+    // }
+
+    // let arr = [];
+    // for (let I = 0; I < 50; I++) {
+    //     let x = 0;
+    //     if (x % 2 === 0) {
+    //
+    //     }
+    // }
+
+
+    // - Дано 2 масиви з рівною кількістю об'єктів.
+    // Масиви:
+    // let usersWithId = [
+    //     {id: 1, name: 'vasya', age: 31, status: false},
+    //     {id: 2, name: 'petya', age: 30, status: true},
+    //     {id: 3, name: 'kolya', age: 29, status: true},
+    //     {id: 4, name: 'olya', age: 28, status: false}
+    // ];
+    //
+    // let citiesWithId = [
+    //     {user_id: 3, country: 'USA', city: 'Portland'},
+    //     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+    //     {user_id: 2, country: 'Poland', city: 'Krakow'},
+    //     {user_id: 4, country: 'USA', city: 'Miami'}
+    // ];
+    //
+    // for (let i = 0; i < usersWithId.length; i++) {
+    //     let user = usersWithId[i];
+    //     for (const city of citiesWithId) {
+    //         if (city.user_id === user.id) {
+    //             user.city = city;
+    //         }
+    //     }
+    // }
+    //
+    // console.log(usersWithId)
+
+
+    // function ConcatArg(arg1, arg2) {
+    //     let x = ((arguments[1]) === undefined) ? console.log(arg1) : console.log(arg1 + arg2);
+    //     console.log(arguments[1]);
+    // }
+    //
+    // ConcatArg(1);
+
+
+    let arr = [];
+    let x = 0
+    for (let i = 0; i < 100; i++) {
+        if (x % 2 === 0) {
+            arr.push(x);
+            console.log('asdasd');
+        }
+        x++;
+    }
+    console.log(arr);
+
+</script>
+
+</body>
+</html>
