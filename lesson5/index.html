@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // let i = 0;
+    //
+    // function increment(somePrimitiveVar) {
+    //     somePrimitiveVar++;
+    // }
+    //
+    // increment(i);
+    // console.log(i);// 1
+
+    // let obj = {i: 0};
+    //
+    // function increment(refObj) {
+    //     refObj.i++;
+    // }
+    //
+    // increment(obj);
+    // console.log(obj); /// {i : 1}
+
+    // let user = {name: 'vasya'}
+    // let user2 = user;
+    // user2.age = 31;
+    // console.log(user2) // name vasya age 31
+    // console.log(user) // name vasya
+
+
+    // let foo = function () {
+    //     console.log('foo foo foo');
+    // };
+    // let bar = foo;
+    // let xxx = bar;
+    // xxx();
+
+
+    // let calc = (a, b, action) => {
+    //     if (action === '+') {
+    //         return a + b;
+    //     } else {
+    //         return 0;
+    //     }
+    //
+    // };
+    // console.log(calc(10, 20,'asd'));
+
+
+    // let restFn = (a, b, c, ...xxx) => {
+    //     console.log(a, b, c, xxx);
+    //
+    // }
+    // restFn(1, 2, 3, 4, 5);
+
+
+    // (function (arg) {
+    // }('asdhafdaf'));
+
+    // function recursion(start) {
+    //     console.log(start);
+    //     start++
+    //     if (start > 10) {
+    //         return;
+    //     }
+    //     recursion(start);
+    // }
+    //
+    // recursion(0);
+
+    //
+    // function foobar(someOuterFunction) {
+    //     someOuterFunction();
+    // }
+    //
+    //
+    // foobar(() => {
+    //     console.log('xxxx');
+    //     console.log('yyyy');
+    //     console.log('achtung');
+    // });
+
+
+    // function PC(disc) {
+    //     disc();
+    // }
+    //
+    // PC(() => {
+    //
+    //     console.log('britney spearse');
+    //     console.log('rhcp');
+    //     console.log('bloodhiund gang');
+    // });
+    // PC(() => {
+    //     console.log('acdc');
+    //     console.log('gfrr');
+    //     console.log('pink floyd');
+    // });
+
+
+    // function calc(a, b, c, callback) {
+    //     callback(a, b, c);
+    // }
+    //
+    // calc(10, 20, 30, function (a, b, c) {
+    //     console.log(a + b - a - 2);
+    // });
+    // let callbackXXX = (x, y, z) => {
+    //     console.log(x * y);
+    // };
+    // calc(100, 200, 300, callbackXXX);
+
+
+    let nums = [11, 222, 3, -11, 0, 100500, -7];
+
+    let numbersFilter = nums.filter((n) => n % 3 === 0);
+    console.log(numbersFilter);
+    console.log(nums);
+
+
+
+</script>
+</body>
+</html>
