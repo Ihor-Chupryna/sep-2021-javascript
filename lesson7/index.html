@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    // let user = {};
+    // user.id = 1;
+    // user['name'] = 'vasya';
+    // console.log(user);
+    // delete user.id;
+    // console.log(user);
+
+    // let person = {
+    //     id: 1,
+    //     name: 'vasya',
+    //     wife: {
+    //         name: 'olga'
+    //     }
+    // }
+    //
+    // person.wife['id'] = 1;
+    // console.log(person);
+
+
+    // let person = {
+    //     personName: 'vaysa',
+    //     surname: 'pupkin',
+    //     getFullname: function () {
+    //         console.log(`${this.personName} ${this.surname}`);
+    //     },
+    //     wife: {
+    //         wifeName: 'katya',
+    //         age: 31,
+    //         getFullname: function () {
+    //             console.log(`${this.wifeName} ${this.age}`);
+    //
+    //         }
+    //     }
+    // }
+    //
+    // person.getFullname();
+    // // console.log(this);
+    // // console.log(name);
+
+
+    // id name
+
+    // function User(id, name, wife) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.wife = wife;
+    //     this.greeting = function () {
+    //         console.log(`hello my name is ${this.name}`);
+    //     };
+    // }
+    //
+    // // let user1 = new User(1, 'kokos');
+    // // console.log(user1);
+    // // user1.greeting();
+    // //
+    // // let user2 = new User(2, 'abrikos');
+    // // console.log(user2);
+    // // user2.greeting();
+    // let user = new User(123, 'asd', {name: 'asqweqew', surname: 'qweqew'});
+    //
+    // console.log(user);
+
+
+    // function User(id, name, wifeName, wifeSurname) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.wife = {name: wifeName, surname: wifeSurname}
+    //     this.greeting = function () {
+    //         console.log(`hello my name is ${this.name}`);
+    //     };
+    // }
+    //
+    // let user = new User(1, 'kokos', 'olya', 'pupkin');
+    // console.log(user);
+    // console.log(user.wife.mother.name);
+
+    // function Husband(name, age, wife) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.wife = wife;
+    // }
+    //
+    // function Wife(name, status) {
+    //     this.name = name;
+    //     this.status = status;
+    // }
+    //
+    //
+    // let husband = new Husband('vasya', 31, new Wife('olya', true));
+    // console.log(husband.wife);
+
+    class User {
+        constructor(id, name) {
+            this.id = id;
+            this.name = name;
+        }
+
+        greeting() {
+            console.log(`hello my name is -> ${this.name}`)
+        }
+
+        go() {
+            console.log('go go go');
+        }
+    }
+
+    // let user = new User(1, 'kokos');
+    // console.log(user);
+    // user.greeting();
+
+    class Client extends User {
+        constructor(id, name, status) {
+            super(id, name);
+            this.status = status;
+        }
+    }
+
+    let client = new Client();
+    client.greeting();
+
+
+
+    class Customer extends Client{
+
+
+        constructor(id, name, status, order) {
+            super(id, name, status);
+            this.order = order;
+        }
+    }
+
+    let customer = new Customer();
+    customer.go();
+
+
+</script>
+
+</body>
+</html>
