@@ -118,29 +118,64 @@
     // console.log(user);
     // user.greeting();
 
-    class Client extends User {
-        constructor(id, name, status) {
-            super(id, name);
-            this.status = status;
-        }
+    // class Client extends User {
+    //     constructor(id, name, status) {
+    //         super(id, name);
+    //         this.status = status;
+    //     }
+    // }
+    //
+    // let client = new Client();
+    // client.greeting();
+    //
+    //
+    //
+    // class Customer extends Client{
+    //
+    //
+    //     constructor(id, name, status, order) {
+    //         super(id, name, status);
+    //         this.order = order;
+    //     }
+    // }
+    //
+    // let customer = new Customer();
+    // customer.go();
+
+
+    function foobar(age, name, id) {
+        let user = {age: age, name: name, id: id};
+        let userWorker = {
+            getAge: function (password) {
+                if (password === 'asdqwe') {
+                    return user.age;
+                } else {
+                    console.log('wrong password');
+                    return -9999;
+
+                }
+            },
+            setAge: function (newAge) {
+                if (newAge > 0 && newAge < 215) {
+                    user.age = newAge;
+                }
+
+            },
+            getName: function () {
+                return user.name;
+
+            }
+        };
+        return userWorker;
     }
 
-    let client = new Client();
-    client.greeting();
+    let uw = foobar(); // userWorker з нашої фнкці
+    let age = uw.getAge('111');
+    console.log(age); // 31
+    uw.setAge(90);
+    console.log(uw.getAge('asdqwe'));
+    console.log(uw.getName());
 
-
-
-    class Customer extends Client{
-
-
-        constructor(id, name, status, order) {
-            super(id, name, status);
-            this.order = order;
-        }
-    }
-
-    let customer = new Customer();
-    customer.go();
 
 
 </script>
