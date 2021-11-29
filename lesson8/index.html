@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--    ads-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <style>
+        .newclass {
+            background: silver;
+            color: gold;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<p class="description asd" id="xxx">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deserunt?</p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab est iste neque porro provident. Nam omnis repellat sunt
+    temporibus vero!
+</p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio exercitationem ipsum nam, odio perspiciatis
+    ut. Aliquam deserunt dignissimos eveniet impedit obcaecati ratione similique sit vero vitae voluptatem! Doloribus,
+    obcaecati!
+</p>
+<p class="description target">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur cupiditate dicta iste, laudantium nihil
+    perspiciatis quaerat rerum totam? Animi beatae delectus earum eius enim est fugit illum inventore ipsa iste maxime
+    nulla, provident quae quam quia quo ratione recusandae sapiente tempore, ullam. Adipisci, aliquid aperiam aspernatur
+    dolorem eius error est nemo nostrum omnis porro, quibusdam quidem, quo rerum ut vel! Ad aspernatur, assumenda aut
+    blanditiis consequuntur cum et id in laudantium nulla omnis recusandae sed vero! Accusantium asperiores aspernatur,
+    at blanditiis dignissimos dolore, dolorem ex harum impedit, laborum nam nihil odit porro sed voluptatum? A itaque
+    obcaecati saepe sunt?
+
+</p>
+
+<div id="xxx">
+    <div class="d1 box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aliquam aperiam architecto aspernatur blanditiis
+           culpa cupiditate deleniti, ducimus expedita fuga laborum molestiae necessitatibus nobis obcaecati omnis quas
+           similique tenetur voluptate?</p>
+        <!--        asdadsadqwe-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aliquam aperiam architecto aspernatur blanditiis
+           culpa cupiditate deleniti, ducimus expedita fuga laborum molestiae necessitatibus nobis obcaecati omnis quas
+           similique tenetur voluptate?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aliquam aperiam architecto aspernatur blanditiis
+           culpa cupiditate deleniti, ducimus expedita fuga laborum molestiae necessitatibus nobis obcaecati omnis quas
+           similique tenetur voluptate?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aliquam aperiam architecto aspernatur blanditiis
+           culpa cupiditate deleniti, ducimus expedita fuga laborum molestiae necessitatibus nobis obcaecati omnis quas
+           similique tenetur voluptate?</p>
+    </div>
+    <div class="d2 box"></div>
+</div>
+
+
+<form action="" name="forma1" class="targetform1">
+    <input type="text" name="username">
+    <button>save</button>
+</form>
+
+<form action="" id="forma2">
+    <input type="text" name="search">
+    <button>search</button>
+</form>
+
+<div>
+    <div>
+        <div class="xxx">
+            <p><a href=""></a><a href=""></a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // //// DOM
+    // // console.log(document);
+    // // console.log(document.head);
+    // // console.log(document.head.innerHTML);
+    //
+    // // console.log(document.body);
+    // // console.log(document.body.innerHTML);
+    //
+    //
+    // //// bytag,
+    //
+    // // let pList = document.getElementsByTagName('p'); // NOT ARRAY - htmlCollection
+    // //
+    // // // pList[0].innerHTML = '<b>ashgdyqtfweqf</b>';
+    // // console.log(typeof pList);
+    // // for (const p of pList) {
+    // //     console.log(p);
+    // //     p.innerText = 'okten';
+    // //
+    // // }
+    //
+    //
+    // //     byclass
+    // // let pWithClassDescription = document.getElementsByClassName('description'); //2
+    // // console.log(pWithClassDescription);
+    // // for (const p of pWithClassDescription) {
+    // //     if (p.innerText.includes('vero')) {
+    // //         p.style.background = 'silver';
+    // //         p.style.color = 'gold';
+    // //         p.style.width = '300px';
+    // //     }
+    // // }
+    //
+    //
+    // // classlist
+    // // for (const p of pWithClassDescription) {
+    // //     if (p.innerText.includes('vero')) {
+    // //         p.classList.add('newclass');
+    // //     }
+    // // }
+    // // let p1 = pWithClassDescription[0];
+    // // console.log(p1);
+    // //
+    // // p1.classList.toggle('asd');
+    // // p1.classList.remove('asd');
+    // // console.log(p1.classList.contains('asd'));
+    //
+    // //     id,
+    // let xxx = document.getElementById('xxx');
+    // // do stuff
+    //
+    //
+    // // search in current element
+    // let d1List = document.getElementsByClassName('d1');
+    // let d1 = d1List[0];
+    // let pD1List = d1.getElementsByTagName('p');
+    // console.log(pD1List);
+    //
+    // // children,
+    // console.log(d1.children); // htmlcoll
+    // //     child,
+    // console.log(d1.childNodes);
+    //
+    // // node / element
+    // for (const node of d1.childNodes) {
+    //     console.log(node);
+    // }
+    //
+    // // querySelector
+    // // let querySelector = document.querySelectorAll('#xxx');
+    // // console.log(querySelector);
+    //
+    // // formsAPI
+    //
+    // // console.log(document);
+    // // console.log(document.forms.forma1);
+    // // console.log(document.forms.forma1.username);
+    // //
+    // // console.log(document.forms.forma2);
+    // // document.forms.forma2.search;
+
+
+    function reCall(startElement) {
+        console.log(startElement);
+        if (startElement.children.length) {
+            for (const element of startElement.children) {
+                reCall(element);
+            }
+
+        }
+    }
+
+    reCall(document.body);
+
+</script>
+
+</body>
+</html>
+
+
