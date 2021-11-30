@@ -143,39 +143,61 @@
     // customer.go();
 
 
-    function foobar(age, name, id) {
-        let user = {age: age, name: name, id: id};
-        let userWorker = {
-            getAge: function (password) {
-                if (password === 'asdqwe') {
-                    return user.age;
-                } else {
-                    console.log('wrong password');
-                    return -9999;
+    // function foobar(age, name, id) {
+    //     let user = {age: age, name: name, id: id};
+    //     let userWorker = {
+    //         getAge: function (password) {
+    //             if (password === 'asdqwe') {
+    //                 return user.age;
+    //             } else {
+    //                 console.log('wrong password');
+    //                 return -9999;
+    //
+    //             }
+    //         },
+    //         setAge: function (newAge) {
+    //             if (newAge > 0 && newAge < 215) {
+    //                 user.age = newAge;
+    //             }
+    //
+    //         },
+    //         getName: function () {
+    //             return user.name;
+    //
+    //         }
+    //     };
+    //     return userWorker;
+    // }
+    //
+    // let uw = foobar(); // userWorker з нашої фнкці
+    // let age = uw.getAge('111');
+    // console.log(age); // 31
+    // uw.setAge(90);
+    // console.log(uw.getAge('asdqwe'));
+    // console.log(uw.getName());
 
-                }
-            },
-            setAge: function (newAge) {
-                if (newAge > 0 && newAge < 215) {
-                    user.age = newAge;
-                }
 
-            },
-            getName: function () {
-                return user.name;
-
-            }
-        };
-        return userWorker;
-    }
-
-    let uw = foobar(); // userWorker з нашої фнкці
-    let age = uw.getAge('111');
-    console.log(age); // 31
-    uw.setAge(90);
-    console.log(uw.getAge('asdqwe'));
-    console.log(uw.getName());
-
+    // function generatePrivateUser(name, age) {
+    //     let user = {name: name, age: age};
+    //     return {
+    //         getName: () => user.name,
+    //         getAge: () => user.age,
+    //         setAge: (age) => {
+    //             if (age > 0) {
+    //                 user.age = age;
+    //             }
+    //         },
+    //         log: () => console.log(user)
+    //
+    //     }
+    // }
+    //
+    // let userWrap = generatePrivateUser('kokos', 31);
+    // console.log(userWrap.getName()); // kokos
+    // console.log(userWrap.getAge()) // 31
+    // userWrap.setAge(33);
+    // console.log(userWrap.getAge());
+    // userWrap.log();
 
 
 </script>
