@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .products > .product {
+            width: 200px;
+        }
+
+        .products > .product > img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="products"></div>
+
+
+<!--    <h3>title + price</h3>-->
+<!--    <img src="xxxx" alt="">-->
+
+
+<script>
+    let productsContainer = document.getElementsByClassName('products')[0];
+
+    let products = [
+        {
+            title: 'milk',
+            price: 22,
+            image:
+                'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg',
+            src: 'asdadas'
+        },
+        {
+            title: 'juice',
+            price: 27,
+            image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+        },
+        {
+            title: 'tomato',
+            price: 47,
+            image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+        },
+        {
+            title: 'tea',
+            price: 15,
+            image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+        }
+
+    ];
+
+    for (const item of products) {
+        let productDiv = document.createElement('div');
+        productDiv.classList.add('product');
+        let h3 = document.createElement('h3');
+        h3.innerText = `${item.title} ${item.price}`
+        h3.classList.add('title');
+        let img = document.createElement('img');
+        img.src = item.image;
+
+        let anchorElement = document.createElement('a');
+        anchorElement.href = item.src;
+        anchorElement.innerText = 'details';
+        productDiv.appendChild(h3);
+        productDiv.appendChild(anchorElement);
+        productDiv.appendChild(img);
+        productsContainer.appendChild(productDiv);
+    }
+
+
+</script>
+
+<script>
+    let productCollection = document.getElementsByClassName('product');
+    let juiceElement = productCollection[1];
+    console.log(juiceElement);
+    console.log(juiceElement.nextElementSibling);
+    console.log(juiceElement.previousElementSibling);
+
+
+
+</script>
+
+</body>
+</html>
