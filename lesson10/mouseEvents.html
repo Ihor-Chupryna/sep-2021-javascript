@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .target {
+            width: 200px;
+            height: 200px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+
+<!--<button id="btn1" on>click me</button>-->
+
+<div class="target"></div>
+
+<script>
+    // let btn1 = document.getElementById('btn1');
+    // // btn1.onclick = function () {
+    // //     console.log('click me!');
+    // // };
+    // // btn1.onclick = function () {
+    // //     console.log('click me!!');
+    // // };
+    //
+    //
+    // btn1.addEventListener('click', function () {
+    //     console.log('click 1');
+    // });
+    // btn1.addEventListener('click', function () {
+    //     console.log('click 2');
+    // });
+
+    let target = document.getElementsByClassName('target')[0];
+    target.ondblclick = function (e) {
+        console.log('dbl ckilck');
+    };
+    target.onmousedown = function (e) {
+        console.log('onmousedown');
+    };
+    target.onmouseup = function (e) {
+        console.log('up');
+    };
+
+    target.onmouseover = function (e) {
+        console.log('over');
+    };
+    target.onmouseleave = function (e) {
+        console.log('leave');
+    };
+
+    target.onmousemove = function (e) {
+        // this.style.background = `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)})`;
+        // console.log(e.clientX, e.clientY);
+        this.style.background = `rgb(${e.clientX},${e.clientY},${e.clientX})`;
+    };
+
+
+</script>
+
+</body>
+</html>

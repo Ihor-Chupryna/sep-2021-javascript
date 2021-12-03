@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        #xxx {
+            width: 200px;
+            height: 200px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+
+<div id="xxx"></div>
+
+<button id="reset">reset</button>
+<script>
+    let xxx = document.getElementById('xxx');
+    xxx.onmousedown = function () {
+        xxx.style.position = 'absolute';
+        document.onmousemove = function (ommEO) {
+            xxx.style.top = ommEO.clientY + 'px';
+            xxx.style.left = ommEO.clientX + 'px';
+
+        };
+    };
+    xxx.onmouseup = function () {
+        document.onmousemove = null;
+    };
+
+
+    let reset = document.getElementById('reset');
+    reset.onclick = function () {
+        xxx.style.top = '8px';
+        xxx.style.left = '8px';
+    };
+</script>
+
+</body>
+</html>
