@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo1</title>
+</head>
+
+<body>
+
+<div class="wrap">
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, quas.</p>
+        <button>close 1</button>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis fugiat obcaecati quis, rem
+           repudiandae!</p>
+        <button>close2</button>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid facilis libero magnam modi officiis
+           possimus rem repellat sapiente sunt voluptate.</p>
+        <button>close3</button>
+    </div>
+</div>
+<script>
+
+    // for (let i = 0; i < 3; i++) {
+    //     let div = document.createElement('div');
+    //     let p = document.createElement('p');
+    //     p.innerText = 'paraasdfaysdfhasfd';
+    //     div.append(p);
+    //     let buttonElement = document.createElement('button');
+    //     buttonElement.innerText = 'close';
+    //     div.append(buttonElement);
+    //     buttonElement.onclick = function () {
+    //         div.style.display = 'none';
+    //     };
+    //     document.body.append(div);
+    //
+    // }
+
+    // let buttons = document.getElementsByTagName('button');
+    // for (const button of buttons) {
+    //     button.onclick = function (e) {
+    //         // console.log(e.target);
+    //         console.log(e.target.parentNode);
+    //         e.target.parentNode.style.display = 'none';
+    //         console.log(e);
+    //     };
+    // }
+
+    // function outer() {
+    //     let cards = [];
+    //     return {
+    //         addCard: function (card) {
+    //             cards.push(card);
+    //         },
+    //         getAllCards: function () {
+    //             return cards;
+    //         }
+    //     }
+    // }
+
+
+    // id: 1,
+    //     name: 'Leanne Graham',
+    //     username: 'Bret',
+    //     email: 'Sincere@april.biz',
+    //     address: {
+    //     street: 'Kulas Light',
+    //         suite: 'Apt. 556',
+    //         city: 'Gwenborough',
+    //         zipcode: '92998-3874',
+    //         geo: {
+    //         lat: '-37.3159',
+    //             lng: '81.1496'
+    //     }
+    // },
+    // phone: '1-770-736-8031 x56442',
+    //     website: 'hildegard.org',
+    //     company: {
+    //     name: 'Romaguera-Crona',
+    //         catchPhrase: 'Multi-layered client-server neural-net',
+    //         bs: 'harness real-time e-markets'
+    // }
+
+    class User {
+        constructor(id, name, userame, email, street, city) {
+            this.id = id;
+            this.name = name;
+            this.userame = userame;
+            this.email = email;
+            this.address = {street: street, city: city}
+        }
+    }
+
+    let user = new User(1, 'lennie', ' bret', 'asd@asd.com', 'asdqwe', 'wrerte');
+
+    class UserArg {
+
+        constructor(id, name, surname, email, address) {
+            this.id = id;
+            this.name = name;
+            this.surname = surname;
+            this.email = email;
+            this.address = address;
+        }
+    }
+
+    let userArg = new UserArg(2, "", '', '', {street: '', city: ''});
+    // document.body.insertBefore();
+
+    // let test = ()=> {
+    //     console.log(this);
+    //     let inner = ()=> {
+    //         console.log(this);
+    //     }
+    //     inner();
+    // }
+    // test();
+    let str = 'asdas';
+    for (const s of str) {
+        console.log(s);
+    }
+
+    let user3 = usersWithAddress[2];
+    for (const key in user3) {
+        let innerObj = user[key];
+        if (typeof innerObj === 'object') {
+            for (const innerObjKey in innerObj) {
+
+            }
+        }
+    }
+
+
+</script>
+</body>
+
+</html>
