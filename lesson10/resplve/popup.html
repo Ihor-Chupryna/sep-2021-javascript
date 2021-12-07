@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+
+        .popup {
+            width: 400px;
+            height: 200px;
+            background: rgba(165, 126, 102, 0.5);
+            position: absolute;
+            top: -1000px;
+            transition: 1s;
+        }
+
+        .show-popup {
+            position: fixed;
+            top: 400px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<button id="showPop">pop</button>
+<div class="popup"></div>
+<script>
+    let showPop = document.getElementById('showPop');
+
+    showPop.onclick = function () {
+        document.getElementsByClassName('popup')[0].classList.toggle('show-popup');
+    };
+
+</script>
+</body>
+</html>
